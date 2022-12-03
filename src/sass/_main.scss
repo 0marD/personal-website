@@ -1,0 +1,25 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-bottom: 1rem;
+  max-width: inherit;
+  height: auto;
+
+  hr {
+    height: 3px;
+    margin-bottom: 5.5em;
+  }
+}
+
+.showcase {
+  width: 95%;
+  min-height: 200px;
+  background-color: hsla(0, 0%, 85%, 0.35);
+  filter: background-color blur(1px);
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+}

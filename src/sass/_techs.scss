@@ -1,0 +1,105 @@
+.technologies {
+  &__heading {
+    margin-bottom: 2rem;
+  }
+
+  .techs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    @media screen and (min-width: 768px) {
+      justify-content: space-evenly;
+      row-gap: 1.5rem;
+    }
+
+    &__tech {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.4rem 0.5rem;
+      border-radius: 0.5rem;
+      transition: all 0.3s;
+      user-select: none;
+
+      @media screen and (min-width: 500px) {
+        width: 40%;
+        min-width: 425px;
+      }
+      @media screen and (min-width: 768px) {
+        max-width: unset;
+        width: 30%;
+      }
+
+      &:hover {
+        background-color: hsla(0, 0%, 100%);
+        transform: scale(1.05) translate(0, -2px);
+        color: black;
+
+        background: linear-gradient(
+          183deg,
+          hsl(326, 100%, 95%),
+          hsl(274, 33%, 95%),
+          hsl(206, 64%, 95%)
+        );
+        background-size: 600% 600%;
+
+        -webkit-animation: AnimationName 7s ease infinite;
+        -moz-animation: AnimationName 7s ease infinite;
+        animation: AnimationName 7s ease infinite;
+      }
+
+      @-webkit-keyframes AnimationName {
+        0% {
+          background-position: 66% 0%;
+        }
+
+        50% {
+          background-position: 35% 100%;
+        }
+
+        100% {
+          background-position: 66% 0%;
+        }
+      }
+
+      @-moz-keyframes AnimationName {
+        0% {
+          background-position: 66% 0%;
+        }
+
+        50% {
+          background-position: 35% 100%;
+        }
+
+        100% {
+          background-position: 66% 0%;
+        }
+      }
+
+      @keyframes AnimationName {
+        0% {
+          background-position: 66% 0%;
+        }
+
+        50% {
+          background-position: 35% 100%;
+        }
+
+        100% {
+          background-position: 66% 0%;
+        }
+      }
+
+      img {
+        height: 2.5rem;
+      }
+
+      .imgLg {
+        height: 3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.header {
+  width: 100%;
+  padding: 0 1rem;
+  color: white;
+  filter: background-color blur(1px);
+  min-height: 4rem;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  max-width: inherit;
+  z-index: 1;
+  height: 4.75rem;
+}
+.header {
+  background: linear-gradient(
+    183deg,
+    hsl(326, 100%, 15%),
+    hsl(274, 33%, 15%),
+    hsl(206, 64%, 20%)
+  );
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 7s ease infinite;
+  -moz-animation: AnimationName 7s ease infinite;
+  animation: AnimationName 7s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 66% 0%;
+  }
+  50% {
+    background-position: 35% 100%;
+  }
+  100% {
+    background-position: 66% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 66% 0%;
+  }
+  50% {
+    background-position: 35% 100%;
+  }
+  100% {
+    background-position: 66% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 66% 0%;
+  }
+  50% {
+    background-position: 35% 100%;
+  }
+  100% {
+    background-position: 66% 0%;
+  }
+}
