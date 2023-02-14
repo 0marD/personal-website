@@ -11,6 +11,8 @@ import npm from '../../assets/images/npm.jpeg';
 import introToReact from '../../assets/images/reactIntro.jpeg';
 import rendersReact from '../../assets/images/renders-composition-reactJs.jpeg';
 import responsiveDesign from '../../assets/images/responsive-design-certificate.jpeg';
+import reactRouter from '../../assets/images/reactRouter.jpeg';
+
 import { CardCertificates } from './CardCertificates';
 
 const Certificates = () => {
@@ -75,6 +77,11 @@ const Certificates = () => {
       id: 11,
       courseName: 'Curso de Responsive design: Maquetación "mobile first"',
       image: responsiveDesign,
+    },
+    {
+      id: 12,
+      courseName: 'Curso de React.JS: Navegación con react router',
+      image: reactRouter,
     },
   ];
   return (

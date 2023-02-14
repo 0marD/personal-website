@@ -6,6 +6,7 @@ import introSection from '../../assets/images/intro-section-with-dropdown-naviga
 import ecommerce from '../../assets/images/e-commerce-product-page.png';
 import urlShorter from '../../assets/images/shortly-url-shortening-api.png';
 import sliderTestimonials from '../../assets/images/coding-bootcamp-testimonials-slider.png';
+import todoApp from '../../assets/images/todo-app.png';
 import { useState } from 'react';
 import { ProjectsCard } from './ProjectsCard';
 
@@ -69,6 +70,16 @@ const Projects = () => {
       link: 'https://testimonials-slider-omar-diaz.netlify.app',
       body: 'Este proyecto consiste en un slider de testimonios, en la cual cambia tanto el testimonio como la foto al hacer clic en los botones.',
       techs: 'Este fue creado con Javascripit, HTML y CSS vanilla',
+      alt: 'Project image',
+    },
+    {
+      id: 7,
+      image: todoApp,
+      head: 'Todo app',
+      link: 'https://todo-app-frontendmentor-omar-diaz.vercel.app',
+      body: 'Este proyecto consiste en una aplicación en la cual puedes agregar tareas por hacer, donde puedes reordenar la lista a placer y cambiar entre los modos oscuro y claro.',
+      techs:
+        'Este fue creado con React.js, empleando local storage, styled-components y custom hooks',
       alt: 'Project image',
     },
   ];
