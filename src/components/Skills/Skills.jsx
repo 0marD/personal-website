@@ -13,6 +13,8 @@ import notion from '../../assets/svg/notion.svg';
 import git from '../../assets/svg/git.svg';
 import github from '../../assets/svg/github.svg';
 import nodejs from '../../assets/svg/nodejs.svg';
+import java from '../../assets/svg/java.svg';
+import python from '../../assets/svg/python.svg';
 import { StyledSkills } from './SyledSkills';
 
 const Skills = () => {
@@ -86,6 +88,16 @@ const Skills = () => {
       name: 'Git',
       src: git,
       alt: 'Git logo',
+    },
+    {
+      name: 'Python',
+      src: python,
+      alt: 'Phyton logo',
+    },
+    {
+      name: 'Java',
+      src: java,
+      alt: 'Java logo',
     },
   ];
 

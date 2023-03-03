@@ -12,6 +12,9 @@ import introToReact from '../../assets/images/reactIntro.jpeg';
 import rendersReact from '../../assets/images/renders-composition-reactJs.jpeg';
 import responsiveDesign from '../../assets/images/responsive-design-certificate.jpeg';
 import reactRouter from '../../assets/images/reactRouter.jpeg';
+import practiceReact from '../../assets/images/practiceReact.jpeg';
+import javaSEIntro from '../../assets/images/javaSEIntro.jpeg';
+import pythonIntro from '../../assets/images/pythonIntro.jpeg';
 
 import { CardCertificates } from './CardCertificates';
 
@@ -82,6 +85,21 @@ const Certificates = () => {
       id: 12,
       courseName: 'Curso de React.JS: Navegación con react router',
       image: reactRouter,
+    },
+    {
+      id: 13,
+      courseName: 'Curso de Introduccion a Java SE',
+      image: javaSEIntro,
+    },
+    {
+      id: 14,
+      courseName: 'Curso practico de React.js',
+      image: practiceReact,
+    },
+    {
+      id: 15,
+      courseName: 'Curso de Fundamentos de Python',
+      image: pythonIntro,
     },
   ];
   return (
