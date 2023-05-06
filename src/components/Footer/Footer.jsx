@@ -7,7 +7,7 @@ const Footer = () => {
       <p>Visita mis redes sociales</p>
       <div className='socialLinks'>
         <a
-          href='https://linkedin.com/in/omar-dhz/'
+          href='https://www.linkedin.com/in/omar-diaz-hdz/'
           target='_blank'
           className='socialLink'
         >
