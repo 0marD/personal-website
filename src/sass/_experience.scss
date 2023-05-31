@@ -1,0 +1,26 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  &__company {
+    font-size: 1rem;
+  }
+  &__details {
+    font-size: 0.885rem;
+    font-style: italic;
+  }
+  &__activities{
+    padding-left: 1rem;
+  }
+  &__description{
+    line-height: 1.6;
+  }
+  &__activity{
+    list-style: circle ;
+  }
+}

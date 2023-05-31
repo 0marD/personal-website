@@ -1,0 +1,37 @@
+.nav-mobile {
+  position: absolute;
+  background-color: var(--background-trasnparent);
+  overflow: hidden;
+  transition: inset 0.3s;
+  inset: 3.25rem 0 0 100%;
+  z-index: 2;
+
+  &.active {
+    transition: inset 0.3s;
+    inset: 3.25rem 0 0 0;
+  }
+  &__container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    right: 0;
+    background-color: var(--elements);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 0 0;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__link {
+    transition: transform 0.3s;
+    width: max-content;
+    font-weight: 800;
+    text-shadow: 0 0 2px hsl(0, 0%, 0%, 0.15);
+    font-size: 1.15rem;
+    &:hover {
+      transform: scale(1.1) translate(0, 0);
+    }
+  }
+}

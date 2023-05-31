@@ -1,0 +1,24 @@
+.cv-heading-section {
+  width: 100%;
+  position: relative;
+  display: grid;
+  place-content: center;
+  margin-bottom: 1rem;
+
+  &__line {
+    background-color: var(--elements);
+    border: none;
+    height: 2px;
+    left: 0;
+    right: 0;
+    top: calc(50% - 1px);
+    position: absolute;
+  }
+  &__title {
+    position: relative;
+    z-index: 1;
+    background-color: var(--elements);
+    padding: 0.25rem 1rem;
+    font-size: 1rem;
+  }
+}

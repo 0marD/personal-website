@@ -1,0 +1,20 @@
+@mixin lightTheme {
+    --elements: hsl(16, 0%, 40%);
+    --elements-two: hsl(16, 0%, 40%);
+    --background: hsl(0, 0%, 100%);
+    --background-light: hsl(0, 0%, 90%);
+    --text: hsl(0, 0%, 0%);
+}
+
+@mixin darkTheme {
+  --elements: hsl(16, 100%, 40%);
+  --elements-two: hsl(16, 100%, 55%);
+  --background: hsl(0, 0%, 0%);
+  --background-trasnparent: hsl(0, 0%, 0%,.75);
+  --background-light: hsl(0, 0%, 20%);
+  --background-input: hsl(0, 0%, 10%);
+  --background-input-focus: hsl(0, 0%, 15%);
+  --background-spinner:hsl(0, 0%, 0%, 0.75);
+  --background-image-spinner: hsl(17, 100%, 20%);
+  --text: hsl(0, 0%, 100%);
+}

@@ -1,0 +1,11 @@
+.section {
+  background-color: var(--background);
+  border-top: 2px dashed var(--elements);
+  padding: 1rem;
+
+  &--light {
+    border-top: 2px dashed var(--elements);
+    background-color: var(--background-input);
+    padding: 1rem;
+  }
+}

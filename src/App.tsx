@@ -1,39 +1,50 @@
-import { GlobalStyle } from "./styles/GlobalStyles";
-import { Header } from "./components/Header/Header";
-import { HamBtn } from "./components/HamBtn/HamBtn";
-import { Footer } from "./components/Footer/Footer";
-import logo from "./assets/logo/logo-dark.svg";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./pages/Home/Home";
-import { NotFound } from "./pages/NotFound/NotFound";
-import { Projects } from "./pages/Projects/Projects";
-import { Skills } from "./pages/Skills/Skills";
-import { ProjectModal } from "./components/ProjectModal/ProjectModal";
-import { NavModal } from "./components/NavModal/NavModal";
-import { Contact } from "./components/Contact/Contact";
-import { Navbar } from "./components/Navbar/Navbar";
+import "./sass/index.scss";
+import { HashRouter, Route, Routes } from "react-router-dom";
+import { Header } from "./components/Header";
+import { RootState } from "./redux/store";
+import { useSelector } from "react-redux";
+import { MenuBurger } from "./components/MenuBurger";
+import logo from "./assets/logo.svg";
+import { Link } from "react-router-dom";
+import { Home } from "./Routes/Home";
+import { Footer } from "./components/Footer";
+import { Projects } from "./Routes/Projects";
+import { ProjectDetail } from "./Routes/ProjectDetail";
+import { Stack } from "./Routes/Stack";
+import { Contact } from "./Routes/Contact";
+import { useSelectedProject } from "./hooks/useSelectedProject";
+import { NavMobile } from "./components/NavMobile";
+import { Resume } from "./Routes/Resume";
 
 const App = (): JSX.Element => {
+  const theme = useSelector((state: RootState) => state.theme.isLightTheme);
+  const isMenuOpen = useSelector((state: RootState) => state.menuToogle.isOpen);
+
+  const [projectSelectedValue] = useSelectedProject();
+
+  const projectSeleceted = projectSelectedValue
+
   return (
-    <>
-      <GlobalStyle />
-      <BrowserRouter>
-        <Header imageSrc={logo}>
-          <HamBtn />
-          <Navbar className="navbar-desk" />
+    <div className={`app ${theme ? "light" : "dark"}`}>
+      <HashRouter>
+        <Header>
+          <Link to={"/"}>
+            <img src={logo} alt="Omar Díaz logo" className="logo" />
+          </Link>
+          <MenuBurger />
         </Header>
-        <NavModal />
+        <NavMobile className={`${isMenuOpen && "active"}`}/>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
+            <Route path="/" element={<Home/>}/>
+            <Route path="/projects" element={<Projects/>}/>
+            <Route path={`/project/${projectSeleceted}`} element={<ProjectDetail/>}/>
+            <Route path={`/stack`} element={<Stack/>}/>
+            <Route path={`/contact`} element={<Contact/>}/>
+            <Route path={`/resume`} element={<Resume/>}/>
         </Routes>
-        <Footer />
-      </BrowserRouter>
-      <ProjectModal />
-    </>
+        <Footer/>
+      </HashRouter>
+    </div>
   );
 };
 

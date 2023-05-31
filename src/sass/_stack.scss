@@ -1,0 +1,18 @@
+.stack{
+    padding: 1.5rem 1rem;
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+
+    &__stacks{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem 0;
+        justify-content: center;
+    }
+
+    &__button{
+        margin: 0 auto;
+    }
+}

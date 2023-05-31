@@ -1,0 +1,17 @@
+.projects-preview{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+
+   &__cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+   }
+   &__btn{
+    margin-top: 2rem;
+   }
+}

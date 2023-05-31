@@ -1,19 +1,19 @@
 // store.tsx
 import { configureStore } from "@reduxjs/toolkit";
-import toggleMenuReducer from "../slices/toggleMenu";
-import toggleProjectModalReducer from "../slices/toggleProjectModal";
-import projectSelectedReducer from "../slices/ProjectSelected";
-import formValuesReducer from "../slices/formValues";
-import formErrorsReducer from "../slices/formErrors";
+import menuReducer from "./slices/menuSlice";
+import themeReducer from './slices/themeSlice'
+import projectSelectedReducer from './slices/projectSelectedSlice'
+import formErrorsReducer from './slices/formErrorsSlice'
+import formValuesReducer from './slices/formValuesSlice'
 
 export const store = configureStore({
-    reducer: {
-        toggleMenu: toggleMenuReducer,
-        toggleProjectModal: toggleProjectModalReducer,
-        projectSelected: projectSelectedReducer,
-        formValues: formValuesReducer,
-        formErrors: formErrorsReducer,
-    },
+  reducer: {
+    menuToogle: menuReducer,
+    theme: themeReducer,
+    projectSelected:projectSelectedReducer,
+    formErrors:formErrorsReducer,
+    formValues:formValuesReducer,
+  },
 });
 
 export type RootState = ReturnType<typeof store.getState>;
