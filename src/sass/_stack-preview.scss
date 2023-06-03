@@ -1,14 +1,21 @@
 .stack-preview{
+    @include section;
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-direction: column;
-
+    background-color: var(--background-secundary);
+&__title{
+    @include heading-secundary;
+}
    &__cards{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+   }
+   &__button{
+    @include btn-secundary;
    }
 }

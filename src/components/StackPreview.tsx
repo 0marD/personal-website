@@ -1,20 +1,21 @@
-import { Link } from "react-router-dom";
-import { useStackPreview } from "../hooks/useStackPreview";
-import { StackCard } from "./StackCard";
+import { Link } from 'react-router-dom'
 
-const StackPrewiev = (): JSX.Element => {
+interface Props {
+  children?: React.ReactNode;
+}
 
-  const { slice } = useStackPreview();
+const StackPreview = ({ children }: Props): JSX.Element => {
+
 
   return (
-    <div className="stack-preview section--light">
-      <h2 className="stack-preview__title heading">Stack</h2>
+    <section className="stack-preview">
+      <h2 className="stack-preview__title">Stack</h2>
       <div className="stack-preview__cards">
-        <StackCard slice={slice} />
+        {children}
       </div>
-      <Link to={"/stack"} className="btn-style-v1">Ver más</Link>
-    </div>
-  );
-};
+      <Link to={"/stack"} className="stack-preview__button">Ver más</Link>
+    </section>
+  )
+}
 
-export { StackPrewiev };
+export { StackPreview }

@@ -1,11 +1,6 @@
-.section {
-  background-color: var(--background);
-  border-top: 2px dashed var(--elements);
-  padding: 1rem;
-
-  &--light {
+@mixin section {
+    background-color: var(--background);
+    border-bottom: 2px dashed var(--elements);
     border-top: 2px dashed var(--elements);
-    background-color: var(--background-input);
-    padding: 1rem;
-  }
+    padding: 2rem 1rem;
 }

@@ -1,0 +1,60 @@
+.button-icon-rotate {
+    width: max-content;
+    font-family: inherit;
+    font-size: 1.5rem;
+    background: linear-gradient(to bottom, var(--elements) 0%, var(--elements-secundary) 100%);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px var(--elements-secundary-transparent);
+    transition: all 0.3s;
+    margin: 0 auto;
+  }
+  
+  .button-icon-rotate:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px var(--elements-transparent);
+  }
+  
+  .button-icon-rotate:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button-icon-rotate span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+  }
+  
+  .button-icon-rotate .icon {
+    transition: transform .3s;
+   font-size: .9em;
+  }
+  
+  .button-icon-rotate .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+    padding: .125rem;
+  }
+  
+  .button-icon-rotate:hover .icon-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .button-icon-rotate:hover .icon {
+    transform: rotate(45deg);
+  }
+  
+  

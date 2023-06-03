@@ -1,11 +1,25 @@
-.contact{
+.contact {
+    @include route;
     display: grid;
     grid-template-columns: 1fr;
     padding: 1rem;
-    gap: 1.5rem;
-    position: relative;
+    gap: 2rem;
 
-    &__submit{
-        margin: 0 auto;
+
+
+    &__heading {
+        @include heading-primary;
+        height: max-content;
+    }
+
+    &__submit {
+        @include btn-primary;
+        background-color: var(--elements);
+        margin: 2rem auto;
+    }
+
+    &__link {
+        @include btn-secundary;
+        height: max-content;
     }
 }

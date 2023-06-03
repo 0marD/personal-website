@@ -1,0 +1,16 @@
+@mixin heading-primary {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+@mixin heading-secundary {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+@mixin heading-thirdy {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+@mixin heading-fourty {
+  font-size: 1rem;
+  font-weight: 600;
+}

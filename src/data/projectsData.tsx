@@ -1,6 +1,6 @@
 import advices from "../assets/projectImages/advices-generator.jpeg";
 import todo from "../assets/projectImages/todo-app.jpeg";
-import urlshorter from "../assets/projectImages/url-shorter.jpeg";
+import urlshorter from "/src/assets/projectImages/url-shorter.jpeg";
 import apicountries from "../assets/projectImages/api-countries.jpeg";
 export interface Stack {
     stack: string;

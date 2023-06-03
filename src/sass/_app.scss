@@ -1,0 +1,16 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+
+  &.light {
+    @include lightTheme;
+  }
+
+  &.dark {
+    @include darkTheme;
+  }
+
+  background-color: var(--background);
+  color: var(--text);
+}

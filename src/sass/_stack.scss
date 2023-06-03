@@ -1,10 +1,15 @@
-.stack{
+.stack {
+    @include route;
     padding: 1.5rem 1rem;
     display: grid;
     align-items: center;
     gap: 2rem;
 
-    &__stacks{
+    &__heading {
+        @include heading-primary;
+    }
+
+    &__stacks {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
@@ -12,7 +17,7 @@
         justify-content: center;
     }
 
-    &__button{
-        margin: 0 auto;
+    &__button {
+        @include btn-secundary;
     }
 }

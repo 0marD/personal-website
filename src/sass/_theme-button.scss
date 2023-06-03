@@ -1,0 +1,28 @@
+.theme-button {
+    position: fixed;
+    z-index: 5;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--elements);
+    border-radius: 50%;
+    display: flex;
+    width: max-content;
+    aspect-ratio: 1/1;
+    padding: .5rem;
+    overflow: hidden;
+    display: none;
+
+    &:active {
+        transform: scale(.9);
+    }
+
+    &__icon {
+        font-size: 0;
+        transition: font-size .3s;
+
+        &.active {
+            transition: font-size .3s;
+            font-size: 1.5rem;
+        }
+    }
+}

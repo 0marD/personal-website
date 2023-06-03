@@ -1,7 +1,32 @@
-.header{
-    padding: .5rem .75rem;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 0.75rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--elements);
+    z-index: 3;
+
+    @media screen and (width >=768px) {
+        padding: 0;
+        padding-right: 1rem;
+        overflow-y: hidden;
+    }
+
+    &__logo {
+        height: 2.5rem;
+
+        @media screen and (width >=768px) {
+            margin: .5rem 0;
+            margin-left: .75rem;
+        }
+    }
+
+    &__menu-toggle {
+        @include menu-burger;
+        width: 2rem;
+    }
 }

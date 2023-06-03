@@ -1,15 +1,12 @@
-import React from 'react'
+import { basicsProps } from "../models/basicsProps"
 
-interface Props{
-    children?:React.ReactNode
+
+const Header = ({ children }: basicsProps): JSX.Element => {
+    return (
+        <header className="header">
+            {children}
+        </header>
+    )
 }
 
-const Header = ({children}:Props):JSX.Element => {
-  return (
-    <header className="header">
-        {children}
-    </header>
-  )
-}
-
-export  {Header}
+export { Header }

@@ -1,17 +1,27 @@
-.projects-preview{
+.projects-preview {
+    @include section;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     flex-direction: column;
+   
+    &__title {
+        @include heading-secundary;
+    }
 
-   &__cards{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-   }
-   &__btn{
-    margin-top: 2rem;
-   }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        @media screen and (width >=1024px) {
+            gap: 3rem 2.5rem;
+        }
+    }
+
+    &__button {
+        @include btn-secundary;
+        margin-top: .5rem;
+    }
 }

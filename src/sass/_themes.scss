@@ -1,20 +1,31 @@
 @mixin lightTheme {
-    --elements: hsl(16, 0%, 40%);
-    --elements-two: hsl(16, 0%, 40%);
-    --background: hsl(0, 0%, 100%);
-    --background-light: hsl(0, 0%, 90%);
-    --text: hsl(0, 0%, 0%);
+  --elements: hsl(16, 100%, 40%);
+  --elements-transparent: hsl(16, 100%, 40%, .25);
+  --elements-secundary: hsl(16, 100%, 55%);
+  --elements-secundary-transparent: hsl(16, 100%, 55%, .25);
+  --elements-thirdy: hsl(16, 100%, 20%);
+  --background: hsl(165, 20%, 80%);
+  --background-trasnparent: hsl(165, 20%, 80%,.95);
+  --background-secundary: hsl(165, 20%, 95%);
+  --background-thirdy: hsl(165, 20%, 80%);
+  --background-fourty: hsl(165, 20%, 75%);
+  --background-fifty: hsl(0, 0%, 100%);
+  --text: hsl(0, 0%, 0%);
+  --shadow: hsl(0, 0%, 0%,.1);
 }
 
 @mixin darkTheme {
   --elements: hsl(16, 100%, 40%);
-  --elements-two: hsl(16, 100%, 55%);
+  --elements-transparent: hsl(16, 100%, 40%, .25);
+  --elements-secundary: hsl(16, 100%, 55%);
+  --elements-secundary-transparent: hsl(16, 100%, 55%, .25);
+  --elements-thirdy: hsl(16, 100%, 20%);
   --background: hsl(0, 0%, 0%);
-  --background-trasnparent: hsl(0, 0%, 0%,.75);
-  --background-light: hsl(0, 0%, 20%);
-  --background-input: hsl(0, 0%, 10%);
-  --background-input-focus: hsl(0, 0%, 15%);
-  --background-spinner:hsl(0, 0%, 0%, 0.75);
-  --background-image-spinner: hsl(17, 100%, 20%);
+  --background-trasnparent: hsl(0, 0%, 0%, .95);
+  --background-secundary: hsl(0, 0%, 5%);
+  --background-thirdy: hsl(0, 0%, 20%);
+  --background-fourty: hsl(0, 0%, 15%);
+  --background-fifty: hsl(0, 0%, 100%);
   --text: hsl(0, 0%, 100%);
+  --shadow: hsl(0, 0%, 100%,.1);
 }

@@ -13,7 +13,8 @@
       display: flex;
       flex-direction: column;
       gap: 1.75rem;
-      background-color: var(--background-light);
+      background-color: var(--background-secundary);
+      border: 3px solid var(--elements);
       font-size: 1.25rem;
       padding: 1rem 0.5rem;
       border-radius: 0.5rem;
@@ -24,21 +25,6 @@
     }
   
     &__button {
-      background-color: var(--background);
-      width: max-content;
-      margin: 0 auto;
-      font-size: 1.2rem;
-      padding: 0.25rem 0.75rem;
-      border-radius: 0.5rem;
-      transition: background-color 0.3s;
-  
-      &:hover {
-        background-color: var(--elements);
-        cursor: pointer;
-      }
-  
-      &:active {
-        transform: scale(0.8);
-      }
+     @include btn-secundary;
     }
 }

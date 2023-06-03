@@ -1,9 +1,18 @@
-.education{
-&__institution{
-    font-size: 1rem;
-    font-weight: 600;
-}
-&__period{
-    font-style: italic;
-}
+.education {
+    @media screen and (width >=768px) {
+        padding: .5rem 2rem;
+    }
+
+    &__institution {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    &__period {
+        font-style: italic;
+    }
+
+    &__degree {
+        font-weight: 600;
+    }
 }

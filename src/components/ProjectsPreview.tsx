@@ -1,21 +1,20 @@
 import { Link } from "react-router-dom";
-import { ProjectCard } from "./ProjectCard";
 
 interface Props {
-  slice?: number;
+    children?: React.ReactNode;
 }
 
-const ProjectsPreview = ({ slice }: Props): JSX.Element => {
+const ProjectsPreview = ({ children }: Props): JSX.Element => {
 
-  return (
-    <div className="projects-preview section">
-    <h2 className="projects-preview__title heading">Proyectos</h2>
-    <div className="projects-preview__cards">
-      <ProjectCard slice={slice} />
-    </div>
-    <Link to={"/projects"} className="btn-style-v1 projects-preview__btn">Ver más</Link>
-  </div>
-  );
+    return (
+        <section className="projects-preview">
+            <h2 className="projects-preview__title">Proyectos</h2>
+            <div className="projects-preview__cards">
+                {children}
+            </div>
+            <Link to={"/projects"} className="projects-preview__button">Ver más</Link>
+        </section>
+    );
 };
 
 export { ProjectsPreview };

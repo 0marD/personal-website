@@ -1,42 +1,8 @@
 .home {
-  &-contact {
-    display: grid;
-    place-content: center;
-    padding: 3rem 0;
+    @include route;
 
-    &__btn {
-      display: flex;
-      width: max-content;
-      font-size: 1.5rem;
-      border: 2px var(--text) solid;
-      border-radius: 0.75rem;
-      overflow: hidden;
-      cursor: pointer;
-      &:hover {
-        background-color: var(--elements);
-
-        .home-contact__btn-icon {
-          transition: color, background-color, .3s;
-          background-color: var(--elements);
-        }
-        .home-contact__btn-text {
-          transition: color, background-color, .3s;
-          background-color: var(--elements);
-        }
-      }
-      &-icon {
-        transition: color, background-color, .3s;
-        width: fit-content;
-        font-size: 1.15rem;
-        padding: 0.25rem 1rem;
-        background-color: var(--background);
-      }
-      &-text {
-        transition: color, background-color, .3s;
-        display: flex;
-        padding: 0.25rem 0.5rem;
-        background-color: var(--background);
-      }
+    @media screen and (width >=768px) {
+        padding: .5rem 0;
+        padding-bottom: 0;
     }
-  }
 }

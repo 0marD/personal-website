@@ -1,31 +1,39 @@
 .stack-card {
-  width: 30%;
-  aspect-ratio: 1/1.25;
-  background-color: var(--text);
-  color: var(--background);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  font-size: 1.2rem;
-  max-width: 7.5rem;
-  text-align: center;
-  &__image-wrapper {
-    width: 90%;
+    width: 30%;
     aspect-ratio: 1/1.25;
+    background-color: var(--background-fifty);
+    color: var(--background);
     overflow: hidden;
     display: flex;
-  }
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    max-width: 7.5rem;
+    text-align: center;
 
-  &__image {
-    margin: auto;
-    height: 100%;
-    width: auto;
-    max-width: 100%;
-    object-fit: fill;
-  }
+    @media screen and (width >=768px) {
+        max-width: 15vw;
+    }  
+    @media screen and (width >=1024px) {
+        max-width: 11vw;
+    }
+
+    &__image-wrapper {
+        width: 90%;
+        aspect-ratio: 1/1.25;
+        overflow: hidden;
+        display: flex;
+    }
+
+    &__image {
+        margin: auto;
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+        object-fit: fill;
+    }
 }
