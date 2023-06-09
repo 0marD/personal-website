@@ -2,6 +2,7 @@ import advices from "../assets/projectImages/advices-generator.jpeg";
 import todo from "../assets/projectImages/todo-app.jpeg";
 import urlshorter from "/src/assets/projectImages/url-shorter.jpeg";
 import apicountries from "../assets/projectImages/api-countries.jpeg";
+import spacetourism from "../assets/projectImages/space-tourism.jpeg"
 export interface Stack {
     stack: string;
     code:string;
@@ -18,6 +19,15 @@ export interface Project {
 }
 
 export const projectsData: Project[] = [
+    {
+        name: "Space tourism multi-page website",
+        direction: "space-tourism",
+        src: spacetourism,
+        description:
+            "Este proyecto consiste en un sitio web multipagína el cual fue creado utilzando react.js, typescript, redux toolkit y sass",
+        url: "https://space-tourism-multi-page-website-khaki.vercel.app/",
+        github: "https://github.com/0marD/Space-tourism-multi-page-website",
+    },
     {
         name: "API rest countries",
         direction: "api-countries",
