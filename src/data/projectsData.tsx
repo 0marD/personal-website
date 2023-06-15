@@ -2,7 +2,9 @@ import advices from "../assets/projectImages/advices-generator.jpeg";
 import todo from "../assets/projectImages/todo-app.jpeg";
 import urlshorter from "/src/assets/projectImages/url-shorter.jpeg";
 import apicountries from "../assets/projectImages/api-countries.jpeg";
+import ipAddressTracker from "../assets/projectImages/ip-address-tracker.jpeg"
 import spacetourism from "../assets/projectImages/space-tourism.jpeg"
+
 export interface Stack {
     stack: string;
     code:string;
@@ -19,6 +21,15 @@ export interface Project {
 }
 
 export const projectsData: Project[] = [
+    {
+        name: "IP Address Tracker",
+        direction: "ip-address-tracker",
+        src: ipAddressTracker,
+        description:
+            "este proyecto permite al usuario obtener información de geolocalización relacionada con una dirección IP específica, validando la IP ingresada y mostrando los resultados de manera clara y amigable para el usuario haciendo uso de NextJS, axios, sass, Google Maps y la API de IP Geolocation API",
+        url: "https://ip-address-tracker-omar-diaz.vercel.app/",
+        github: "https://github.com/0marD/IP-Address-Tracker",
+    },
     {
         name: "Space tourism multi-page website",
         direction: "space-tourism",

@@ -1,8 +1,15 @@
 {
-  "name": "portfolio",
+  "name": "ortfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "Omar Díaz Hernández",
+  "license": "MIT",
+  "homepage": "https://omar-diaz.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0marD/personal-website"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -17,6 +24,7 @@
     "react-icons": "^4.9.0",
     "react-redux": "^8.0.7",
     "react-router-dom": "^6.11.2",
+    "readme-md-generator": "^1.0.0",
     "sass": "^1.62.1"
   },
   "devDependencies": {
